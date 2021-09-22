@@ -14,6 +14,10 @@ const ItemSchema = new Schema({
         type:String,
     
     },
+    apply:{
+        type:Boolean,
+        default:false
+    },
     source:{
         type:String,
        

@@ -3,17 +3,15 @@ const mongoose = require('mongoose');
 const config = require('config');
 
 
-const item = require('./routes/api/item');
+const itemRoutes = require('./routes/itemRoutes');
 const app=express();
+
+
 
 app.use(express.json());
 app.use(express.urlencoded({
     extended:false,
 }))
-
-// app.get('/',(res,req)=> {
-//     console.log("Hello World");
-// })
 
 const db = require('./config/keys').mongoURI;
 
@@ -24,7 +22,7 @@ mongoose.connect((db) )
     .catch((err)=>{
         console.log(err);
     })
-app.use('/api/item',item);
+app.use('/api/items',itemRoutes);
 
 const port = process.env.PORT || 5000;
 
