@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  z-index: 2;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  color: black;
+  padding: 10px;
+  padding-left: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  position: fixed;
+  background-color: rgb(226, 220, 220);
+}
+
+.navbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.nav ::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar:link {
+  cursor: pointer;
+  margin-left: 30px;
+  margin: right 30px;
+  font-weight: 50px;
+  opacity: 0.7;
+  font-size: 16px;
+  transition: transform 50ms ease-out;
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+}
+
+.nav > h2:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}

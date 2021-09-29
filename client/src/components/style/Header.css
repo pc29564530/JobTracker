@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-top: 15px;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.6);
+  background-color: white;
+  opacity: 1;
+}
+
+.header_left :link {
+  text-transform: uppercase;
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  align-items: center;
+  line-height: inline;
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header_right {
+  padding-top: 10px;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 0;
+  position: relative;
+  color: black;
+  cursor: pointer;
+}

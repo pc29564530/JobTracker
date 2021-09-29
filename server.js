@@ -1,13 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const config = require('config');
-
+const cors = require('cors');
 
 const itemRoutes = require('./routes/itemRoutes');
 const app=express();
 
 
-
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({
     extended:false,
@@ -22,7 +22,8 @@ mongoose.connect((db) )
     .catch((err)=>{
         console.log(err);
     })
-app.use('/api/items',itemRoutes);
+app.use('/routes/items',itemRoutes);
+
 
 const port = process.env.PORT || 5000;
 

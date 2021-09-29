@@ -1,0 +1,32 @@
+.itemScreen {
+  max-width: 1300px;
+  margin: 1rem auto;
+  display: flex;
+}
+.card {
+  display: block;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  margin-left: 20px;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  max-width: 360px;
+  max-height: 660px;
+  z-index: 1;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+  margin-bottom: 20px;
+  color: black;
+  padding-bottom: 10px;
+}
+.card img {
+  object-fit: cover;
+  width: 100%;
+}
+/* .card > h1 {
+  font-weight: 50;
+  font-size: 3ch;
+} */
