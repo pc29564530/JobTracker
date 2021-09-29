@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
@@ -18,7 +18,14 @@ function App() {
     <Router>
       <div className="App">
        <Switch>
-       <Route  path="/items/:id" component={ItemScreen}/>
+       <Route  path="/items/:id" component={ItemScreen} />
+       <Route path="/itemScreen">
+         <Fragment>
+         <Header/>
+         <ItemScreen/>
+         </Fragment>
+         
+       </Route>
        <Route  path="/applied">
             <Header/>
           <Navbar/>
